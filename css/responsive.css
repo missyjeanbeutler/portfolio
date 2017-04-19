@@ -12,10 +12,10 @@
 	.mouse-icon{bottom: 5px;}
 
 	/*---- portfolio -----*/
-	ul.portfolio-image li{
+	/*ul.portfolio-image li{
 		width: 100%;
 		padding-top: 95%;
-	}
+	}*/
 
 	/*---- blog -----*/
 	.grid-item {
@@ -62,9 +62,9 @@
 	#home p {width: 100%;}
 
 	/*----- portfolio -----*/
-	.portfolio-image > li{
+	/*.portfolio-image > li{
 		width: 50%;
-	}
+	}*/
 
 
   /*---- blog -----*/
