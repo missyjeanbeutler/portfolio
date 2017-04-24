@@ -81,7 +81,7 @@ img { max-width: 100%; }
 
 .divLines {
   width: 100px; 
-  border-bottom: 1px solid #999; 
+  border-bottom: 1px solid #edca66; 
   margin: 0 auto;
 }
 
@@ -153,7 +153,7 @@ img { max-width: 100%; }
 }
 .white-bg {
   background: #ffffff;
-  padding: 120px 0;
+  padding: 30px 0;
   display: block;
 }
 /*-------- content --------*/
@@ -575,13 +575,13 @@ ul.portfolio-image li:hover {
   cursor: pointer;
 }
 ul.portfolio-image li:hover img {
-  -webkit-filter: grayscale(20%);
+  -webkit-filter: grayscale(20%) contrast(40%);
   transform: scale(1.15);
 }
 ul.portfolio-image li:hover .image-bg {opacity: 1;}
-ul.portfolio-image li:hover .description-wrap {
-  background: rgba(186, 186, 186, 0.6);
-}
+/*ul.portfolio-image li:hover .description-wrap {
+  background: rgba(186, 186, 186, 0.2);
+}*/
 ul.portfolio-image li img {
   position: absolute;
   width: 100%;
@@ -589,7 +589,7 @@ ul.portfolio-image li img {
   left: 0;
   top: 0;
   object-fit: cover;
-  -webkit-filter: grayscale(100%);
+  -webkit-filter: grayscale(100%) contrast(90%);
   transition: filter, transform, 0.5s;
 }
 ul.portfolio-image li .decription-wrap {
@@ -598,7 +598,6 @@ ul.portfolio-image li .decription-wrap {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(242, 242, 242, 0.4);
   padding: 20px;
   transition: background, 0.5s;
   cursor: pointer;
@@ -606,7 +605,7 @@ ul.portfolio-image li .decription-wrap {
 ul.portfolio-image li .image-bg {
   color: #2f2f2f;
   background: #ffffff;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   text-transform: uppercase;
   width: 100%;
@@ -884,7 +883,7 @@ ul.portfolio-image li .desc{
   width: 100%;
 }
 .bg-about {
-  background: url('../images/about-meB&W.jpg') center no-repeat;
+  background: url('../images/meB&W.jpg') center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1181,6 +1180,20 @@ ul.portfolio-image li .desc{
 
 /*----------------------------------------- 8) Component --------------------------------------------------*/
 /*---------------- a. Skills ----------------*/
+
+#skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#skills h4 {
+  margin-bottom: 40px;
+}
+
+
+
 .skillst {margin-top: 30px;}
 .skillst .skillbar {
   width: 100%;

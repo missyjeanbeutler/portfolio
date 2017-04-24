@@ -162,22 +162,22 @@
   
     
   //header
-  function inits() {
-    window.addEventListener('scroll', function(e){
-        var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-            shrinkOn = 300,
-            header = document.querySelector(".for-sticky");
-        if (distanceY > shrinkOn) {
-            classie.add(header,"opacity-nav");
-        } else {
-            if (classie.has(header,"opacity-nav")) {
-                classie.remove(header,"opacity-nav");
-            }
-          }
-      });
-    }
+  // function inits() {
+  //   window.addEventListener('scroll', function(e){
+  //       var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+  //           shrinkOn = 300,
+  //           header = document.querySelector(".for-sticky");
+  //       if (distanceY > shrinkOn) {
+  //           classie.add(header,"opacity-nav");
+  //       } else {
+  //           if (classie.has(header,"opacity-nav")) {
+  //               classie.remove(header,"opacity-nav");
+  //           }
+  //         }
+  //     });
+  //   }
 
-  window.onload = inits();
+  // window.onload = inits();
 
   //nav-active
   function onScroll(event){
@@ -185,13 +185,13 @@
     $('.menu-list a').each(function () {
       var currentLink = $(this);
       var refElement = $(currentLink.attr("href"));
-      if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
-        $('.menu-list a').removeClass("active");
-        currentLink.addClass("active");
-      }
-      else{
-        currentLink.removeClass("active");
-      }
+      // if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
+      //   $('.menu-list a').removeClass("active");
+      //   currentLink.addClass("active");
+      // }
+      // else{
+      //   currentLink.removeClass("active");
+      // }
     });
   }
 
