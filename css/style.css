@@ -558,6 +558,15 @@ p {
 /*----------------------------------------- 7) Sections --------------------------------------------------*/
 /*---------- a. portfolio -----------*/
 
+.beaten-path {
+  margin: 0 200px 100px 200px;
+}
+
+.dev-tracker {
+  margin: 200px 200px 100px 200px;
+}
+
+
 ul.portfolio-image {
   list-style: none;
   position: relative;
