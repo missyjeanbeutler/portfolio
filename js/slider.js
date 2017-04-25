@@ -10,7 +10,7 @@ $(document).ready(function () {
   });
 });
 
-$(document).ready(function () {
+$(document).ready(function () { 
   $('.dev-tracker').slick({
     dots: true,
     infinite: true,
